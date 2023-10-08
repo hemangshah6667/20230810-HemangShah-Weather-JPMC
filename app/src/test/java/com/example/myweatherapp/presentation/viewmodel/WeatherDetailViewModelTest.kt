@@ -2,8 +2,8 @@ package com.example.myweatherapp.presentation.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.example.myweatherapp.MainCoroutineScopeRule
-import com.example.myweatherapp.domain.Location
-import com.example.myweatherapp.domain.WeatherInfoModel
+import com.example.myweatherapp.domain.model.Location
+import com.example.myweatherapp.domain.model.WeatherInfoModel
 import com.example.myweatherapp.domain.usecase.GetGeoCodeUseCase
 import com.example.myweatherapp.domain.usecase.GetWeatherInfoUseCase
 import kotlinx.coroutines.test.runTest
