@@ -30,7 +30,7 @@ class WeatherDetailFragment : Fragment() {
     private var _binding: FragmentFirstBinding? = null
 
     // This property is only valid between onCreateView and
-    // onDestroyView. private val viewModel by viewModels<SearchViewModel>()
+    // onDestroyView.
     private val binding get() = _binding!!
     private val viewModel by viewModels<WeatherDetailViewModel>()
     private var fusedLocationClient: FusedLocationProviderClient? = null

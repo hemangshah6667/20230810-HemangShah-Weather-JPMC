@@ -18,7 +18,7 @@ import org.mockito.Mockito
 
 internal class WeatherDetailViewModelTest {
 
-    lateinit var weatherDetailViewModel: WeatherDetailViewModel
+    private lateinit var weatherDetailViewModel: WeatherDetailViewModel
     private val getWeatherInfoUseCase: GetWeatherInfoUseCase = Mockito.mock()
     private val getGeoCodeUseCase: GetGeoCodeUseCase = Mockito.mock()
 

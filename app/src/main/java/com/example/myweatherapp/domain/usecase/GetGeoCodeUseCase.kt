@@ -3,12 +3,13 @@ package com.example.myweatherapp.domain.usecase
 import android.content.Context
 import android.content.SharedPreferences
 import com.example.myweatherapp.data.repository.WeatherRepository
+import com.example.myweatherapp.domain.IWeatherRepository
 import com.example.myweatherapp.domain.model.Location
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
 class GetGeoCodeUseCase @Inject constructor(
-    private val weatherRepository: WeatherRepository,
+    private val weatherRepository: IWeatherRepository,
     @ApplicationContext appContext: Context,
 ) {
     //given more time we can implement shared preference read and write in

@@ -39,7 +39,7 @@ class WeatherDetailViewModel @Inject constructor(
         viewModelScope.launch {
             //here i would prefer to use sealed class for different response like Success, Progress, Error etc to manage all the scenario
             try {
-                //currently not handling empty search result UI on screen
+                //given more time i will implement validation for empty or invalid input scenarios here
                 loadData(geoCodeUseCase.invoke(cityName))
             } catch (e: Exception) {
                 println(e)
